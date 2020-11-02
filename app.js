@@ -17,8 +17,7 @@ function previous() {
     if (index < 0) {
         index = photos.length - 1;
     }
-    console.log(index);
-    obrazek.src = `/image_slider/img/${photos[index]}`;
+    obrazek.src = `img/${photos[index]}`;
 };
 
 function nexte() {
@@ -26,8 +25,7 @@ function nexte() {
     if (index > photos.length - 1) {
         index = 0;
     }
-    console.log(index);
-    obrazek.src = `/image_slider/img/${photos[index]}`;
+    obrazek.src = `img/${photos[index]}`;
 };
 
 prev.addEventListener('click', previous);
